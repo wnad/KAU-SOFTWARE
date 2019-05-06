@@ -6,12 +6,13 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JCheckBox;
 
+@SuppressWarnings("serial")
 public class CheckBoxFrame extends JFrame{
 	private JTextField textField;
-	private JCheckBox boldJChechBox;
+	private JCheckBox boldJCheckBox;
 	private JCheckBox italicJCheckBox;
 	
-	public ChechBoxFrame() {
+	public CheckBoxFrame() {
 		super("JChecker Test");
 		setLayout(new FlowLayout());
 		
@@ -20,11 +21,11 @@ public class CheckBoxFrame extends JFrame{
 		add(textField);
 		
 		boldJCheckBox = new JCheckBox("Bold");
-		italicJChechBox = new JCheckBox("Italic");
-		add(boldJChechBox);
-		add(italicJChechBox);
+		italicJCheckBox = new JCheckBox("Italic");
+		add(boldJCheckBox);
+		add(italicJCheckBox);
 		
-		ChechBoxHandler handler = new CheckBoxHandler();
+		CheckBoxHandler handler = new CheckBoxHandler();
 		boldJCheckBox.addItemListener(handler);
 		italicJCheckBox.addItemListener(handler);		
 	}
