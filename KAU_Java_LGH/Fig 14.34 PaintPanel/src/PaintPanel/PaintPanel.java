@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 public class PaintPanel extends JPanel{
 	private int pointCount = 0;
 	
-	private Point[] points = new Point[10000];
+	private Point[] points = new Point[5];
 	
 	public PaintPanel() {
 		addMouseMotionListener(
