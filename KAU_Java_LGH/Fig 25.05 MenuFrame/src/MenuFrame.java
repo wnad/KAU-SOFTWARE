@@ -36,22 +36,23 @@ public class MenuFrame extends JFrame{
 		aboutItem.setMnemonic('A');
 		fileMenu.add(aboutItem);
 		aboutItem.addActionListener(
-				new ActionListener() {
-					public void actionPerformed(ActionEvent event) {
-						JOptionPane.showMessageDialog(MenuFrame.this, "This is an example\nof using munus", "About", JOptionPane.PLAIN_MESSAGE);
-					}
+			new ActionListener() {
+				public void actionPerformed(ActionEvent event) {
+					JOptionPane.showMessageDialog(MenuFrame.this, "This is an example\nof using munus", 
+						"About", JOptionPane.PLAIN_MESSAGE);
 				}
-			);
+			}
+		);
 		JMenuItem exitItem = new JMenuItem("Exit");
 		exitItem.setMnemonic('x');
 		fileMenu.add(exitItem);
 		exitItem.addActionListener(
-				new ActionListener() {
-					public void actionPerformed(ActionEvent event) {
+			new ActionListener() {
+				public void actionPerformed(ActionEvent event) {
 						System.exit(0);
-					}
 				}
-			);
+			}
+		);
 		JMenuBar bar = new JMenuBar();
 		setJMenuBar(bar);
 		bar.add(fileMenu);
