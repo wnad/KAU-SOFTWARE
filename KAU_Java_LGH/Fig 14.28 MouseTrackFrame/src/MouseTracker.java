@@ -6,7 +6,7 @@ public class MouseTracker {
 		// TODO Auto-generated method stub
 		MouseTrackerFrame mouseTrackerFrame = new MouseTrackerFrame();
 		mouseTrackerFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		mouseTrackerFrame.setSize(300, 100);
+		mouseTrackerFrame.setSize(1000, 500);
 		mouseTrackerFrame.setVisible(true);
 	}
 
