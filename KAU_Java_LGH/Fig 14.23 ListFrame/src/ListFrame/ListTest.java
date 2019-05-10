@@ -9,7 +9,5 @@ public class ListTest {
 		listFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		listFrame.setSize(350, 150);
 		listFrame.setVisible(true);
-
 	}
-
 }
